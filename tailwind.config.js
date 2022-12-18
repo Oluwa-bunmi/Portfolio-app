@@ -7,9 +7,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        dancing: ['"Dancing Script"', ...defaultTheme.fontFamily.sans]
-
-      }
+        dancing: ['"Dancing Script"', ...defaultTheme.fontFamily.sans],
+      },
+      backgroundImage: {
+       
+        'heroImage': "url('../src/assets/third.jpg')",
+      },
     },
   },
   plugins: [],

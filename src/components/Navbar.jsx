@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-20 px-4 bg-gray absolute z-10 w-full bg-[var(--neutral)] ">
+    <div className="flex justify-between items-center h-20 px-8  z-10 w-full bg-black">
       <div>
         <h1 className="text-[var(--primary)] font-dancing">Jummy.</h1>
       </div>
@@ -33,10 +33,10 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="hidden md:flex cursor-pointer">
-        <BiSun />
+        <BiSun className="text-white" />
       </div>
 
-      <div className="z-10 md:hidden" onClick={handleNav}>
+      <div className="z-[5] pt-[0.6rem] md:hidden" onClick={handleNav}>
         {nav ? (
           <AiOutlineClose size={20} className="text-white" />
         ) : (
@@ -48,8 +48,8 @@ const Navbar = () => {
         onClick={handleNav}
         className={
           nav
-            ? "absolute left-0 top-0  w-full px-4 py-7 bg-[var(--neutral)] flex flex-col  "
-            : "absolute left-[-100%]"
+            ? "absolute left-0 top-0  w-full px-4 py-7 bg-black flex flex-col z-[3] "
+            : "absolute left-[-100%] "
         }
       >
         <ul>
@@ -70,7 +70,7 @@ const Navbar = () => {
             <a href="">Contact</a>
           </li>
           <li>
-            <BiSun />
+            <BiSun className="text-white" />
           </li>
         </ul>
       </div>
