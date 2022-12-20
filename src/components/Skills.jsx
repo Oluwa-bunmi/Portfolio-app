@@ -48,6 +48,7 @@ const Skills = () => {
           <span>GIT & GITHUB</span>
         </p>
       </div>
+      <hr />
     </>
   );
 };
