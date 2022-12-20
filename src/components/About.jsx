@@ -31,6 +31,7 @@ const About = () => {
           </button>
         </a>
       </div>
+   
     </div>
     // </div>
   );

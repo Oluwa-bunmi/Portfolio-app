@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-20 px-8  z-10 w-full bg-black">
+    <div className="flex justify-between items-center h-20 px-14  z-10 w-full bg-black">
       <div>
         <h1 className="text-[var(--primary)] font-dancing">Jummy.</h1>
       </div>
