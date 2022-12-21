@@ -2,8 +2,24 @@ import { MdOutlineEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 
 const Contacts = () => {
+    const form = useRef();
+
+     const sendEmail = (e) => {
+       e.preventDefault();
+
+       emailjs
+         .sendForm(
+           "service_ekfcegk",
+           "template_rzynd8w",
+           form.current,
+           "C7SY7Q3Ed8eOQ4Efv"
+         )
+        e.target.reset()
+     };
   return (
     <div id="contact">
       <div className="text-center  bg-black">
@@ -50,7 +66,8 @@ const Contacts = () => {
           </div>
         </div>
         <form
-          action=""
+          ref={form}
+          onSubmit={sendEmail}
           className="flex flex-col gap-5 order-1 pt-8 lg:pt-0 lg:order-2"
         >
           <input
