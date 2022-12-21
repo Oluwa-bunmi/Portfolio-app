@@ -20,7 +20,7 @@ const data = [
   {
     id: 2,
     image: dashboard,
-    title: "Blazo",
+    title: "Dashboard",
     description: "A responsive dashboard with light and dark mode",
     stacks: "Stacks: HTML, SASS",
     github: "https://github.com/Oluwa-bunmi/Dashboard",
@@ -70,7 +70,7 @@ const data = [
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("live");
   return (
-    <>
+    <div id="projects">
       <div className="text-center  bg-black">
         <h2 className="pt-10 text-white">My recent projects.</h2>
         <h1 className="text-[var(--primary)] font-dancing mt-4">Portfolio</h1>
@@ -122,7 +122,7 @@ const Projects = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,4 +1,4 @@
-import {AiOutlineHtml5} from "react-icons/ai"
+import { AiOutlineHtml5 } from "react-icons/ai";
 import { DiCss3Full } from "react-icons/di";
 import { DiSass } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
@@ -6,11 +6,9 @@ import { BsBootstrapFill } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
 import { IoLogoJavascript } from "react-icons/io";
 
-
-
 const Skills = () => {
   return (
-    <>
+    <div id="skills">
       <hr />
       <div className="text-center  bg-black">
         <h2 className="pt-10 text-white">What Skills I Have</h2>
@@ -49,7 +47,7 @@ const Skills = () => {
         </p>
       </div>
       <hr />
-    </>
+    </div>
   );
 };
 

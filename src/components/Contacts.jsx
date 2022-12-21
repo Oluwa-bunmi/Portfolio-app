@@ -5,7 +5,7 @@ import { AiOutlineGithub } from "react-icons/ai";
 
 const Contacts = () => {
   return (
-    <>
+    <div id="contact">
       <div className="text-center  bg-black">
         <h2 className="pt-10 text-white">Get in Touch</h2>
         <h1 className="text-[var(--primary)] font-dancing mt-4">Contact Me</h1>
@@ -37,7 +37,7 @@ const Contacts = () => {
               href="https://api.whatsapp.com/send?phone=+2347040573717"
               target="_blank"
             >
-              Send a message
+              Whatsapp
             </a>
           </div>
 
@@ -79,7 +79,7 @@ const Contacts = () => {
           </button>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -3,16 +3,13 @@ import { useState } from "react";
 const About = () => {
   const [activeTab, setActiveTab] = useState("empty");
   return (
-    <div className="bg-black text-white px-4 lg:px-[11rem] py-16 text-center " id="about">
+    <div
+      id="about"
+      className="bg-black text-white px-4 lg:px-[11rem] py-16 text-center"
+    >
       <h2>Get to know</h2>
       <h1 className="text-[var(--primary)] font-dancing py-6">About Me</h1>
-      {/* <div className="flex justify-between align-center gap-[10rem]"> */}
-      {/* <div className="text-[var(--primary)] ">
-          <span> &#60; </span>
-          <span> Jummy </span>
 
-          <span>/ &#62;</span>
-        </div> */}
       <div className="leading-loose">
         <p>I am Oluwabunmi, a frontend developer</p>
         <p className="mb-6">
@@ -31,7 +28,6 @@ const About = () => {
           </button>
         </a>
       </div>
-   
     </div>
     // </div>
   );
