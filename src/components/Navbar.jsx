@@ -3,15 +3,20 @@ import { BiSun } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
+
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+ 
+
+  
 
   const handleNav = () => {
     setNav(!nav);
   };
 
   return (
-    <div className="flex justify-between items-center h-20 px-14  z-10 w-full bg-black">
+    <div className="flex justify-between items-center h-20 px-6 sm:px-14 z-10 w-full bg-[var(--background)]">
       <div>
         <h1 className="text-[var(--primary)] font-dancing">Jummy.</h1>
       </div>
@@ -48,7 +53,7 @@ const Navbar = () => {
         onClick={handleNav}
         className={
           nav
-            ? "absolute left-0 top-0  w-full px-4 py-7 bg-black flex flex-col z-[3] "
+            ? "absolute left-0 top-0  w-full px-4 py-7 bg-[var(--background)] flex flex-col z-[3] "
             : "absolute left-[-100%] "
         }
       >
@@ -58,7 +63,6 @@ const Navbar = () => {
             <a href="/">Home</a>
           </li>
           <li>
-            
             <a href="#about">About</a>
           </li>
           <li>

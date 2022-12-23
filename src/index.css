@@ -8,8 +8,10 @@
 :root {
   --primary: #f9004d;
   --neutral: rgb(128, 128, 128);
-  --gradient: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+  --background: #000;
+  --text: #fff;
 }
+
 
 .overlay::after {
   background: #000;
@@ -36,7 +38,7 @@
   padding: 1.5rem;
   background: transparent;
   resize: none;
-  width: 100%
+  width: 100%;
 }
 
 @layer base {
