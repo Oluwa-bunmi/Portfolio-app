@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { BiSun } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
+
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
 
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   const [nav, setNav] = useState(false);
+ 
  
 
   
@@ -16,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-20 px-6 sm:px-14 z-10 w-full bg-[var(--background)]">
+    <div className="flex justify-between items-center h-20 px-6 sm:px-14 z-10 w-full ">
       <div>
         <h1 className="text-[var(--primary)] font-dancing">Jummy.</h1>
       </div>
@@ -38,7 +40,8 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="hidden md:flex cursor-pointer">
-        <BiSun className="text-white" />
+       
+        <BiSun className="" onClick={toggle} />
       </div>
 
       <div className="z-[5] pt-[0.6rem] md:hidden" onClick={handleNav}>

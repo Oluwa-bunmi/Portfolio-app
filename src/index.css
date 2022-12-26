@@ -11,7 +11,14 @@
   --background: #000;
   --text: #fff;
 }
-
+#dark {
+  background-color: #000;
+  color: #fff;
+}
+#light {
+  color: #000;
+  background-color: #fff;
+}
 
 .overlay::after {
   background: #000;
@@ -47,7 +54,7 @@
     scroll-behavior: smooth;
   }
   li {
-    @apply p-6 text-white;
+    @apply p-6 ;
   }
   h1 {
     @apply text-3xl md:text-4xl font-bold;
