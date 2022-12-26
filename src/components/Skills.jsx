@@ -10,13 +10,13 @@ const Skills = () => {
   return (
     <div id="skills">
       <hr />
-      <div className="text-center  bg-black">
-        <h2 className="pt-10 text-white">What Skills I Have</h2>
+      <div className="text-center  ">
+        <h2 className="pt-10 ">What Skills I Have</h2>
         <h1 className="text-[var(--primary)] font-dancing mt-4">
           My Experience
         </h1>
       </div>
-      <div className="text-white bg-black py-12 px-6 sm:px-14  grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-12">
+      <div className="py-12 px-6 sm:px-14  grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-12">
         <p className="flex items-end">
           <AiOutlineHtml5 className="text-5xl text-[coral] " />
           <span>HTML5</span>

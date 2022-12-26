@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="bg-black text-white px-4 lg:px-[11rem] py-16 text-center"
+      className=" px-4 lg:px-[11rem] py-16 text-center"
     >
       <h2>Get to know</h2>
       <h1 className="text-[var(--primary)] font-dancing py-6">About Me</h1>

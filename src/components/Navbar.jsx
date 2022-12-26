@@ -41,7 +41,7 @@ const Navbar = ({toggle}) => {
       </ul>
       <div className="hidden md:flex cursor-pointer">
        
-        <BiSun className="" onClick={toggle} />
+        <BiSun onClick={toggle} />
       </div>
 
       <div className="z-[5] pt-[0.6rem] md:hidden" onClick={handleNav}>
@@ -77,9 +77,7 @@ const Navbar = ({toggle}) => {
           <li>
             <a href="#contact">Contact</a>
           </li>
-          <li>
-            <BiSun className="text-white" />
-          </li>
+          
         </ul>
       </div>
     </div>

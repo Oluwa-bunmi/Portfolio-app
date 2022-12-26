@@ -71,17 +71,17 @@ const Projects = () => {
   const [activeTab, setActiveTab] = useState("live");
   return (
     <div id="projects">
-      <div className="text-center  bg-black">
-        <h2 className="pt-10 text-white">My recent projects.</h2>
+      <div className="text-center  ">
+        <h2 className="pt-10 ">My recent projects.</h2>
         <h1 className="text-[var(--primary)] font-dancing mt-4">Portfolio</h1>
       </div>
-      <div className="bg-black py-8 px-6 sm:px-14 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className=" py-8 px-6 sm:px-14 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
         {data.map(({ id, title, image, github, demo, description, stacks }) => {
           return (
-            // <div >
+           
             <div
               key={id}
-              class="w-[100%]  text-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
+              class="w-[100%]   border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
             >
               <img
                 class=""
@@ -118,7 +118,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            // </div>
+            
           );
         })}
       </div>

@@ -22,11 +22,11 @@ const Contacts = () => {
      };
   return (
     <div id="contact">
-      <div className="text-center  bg-black">
-        <h2 className="pt-10 text-white">Get in Touch</h2>
+      <div className="text-center ">
+        <h2 className="pt-10 ">Get in Touch</h2>
         <h1 className="text-[var(--primary)] font-dancing mt-4">Contact Me</h1>
       </div>
-      <div className="bg-black text-white px-6 sm:px-14 py-12 lg:grid lg:grid-cols-[30%_58%] gap-[2rem] lg:gap-[12%]">
+      <div className=" px-6 sm:px-14 py-12 lg:grid lg:grid-cols-[30%_58%] gap-[2rem] lg:gap-[12%]">
         <div className="flex flex-col order-2 lg:order-1">
           <div className="flex items-center gap-4 leading-[5]">
             <AiOutlineGithub className="text-[2.5rem]" />
@@ -61,7 +61,7 @@ const Contacts = () => {
             <MdOutlineEmail className="text-[2rem]" />
 
             <a href="mailto:gbemisoyeadejumoke@gmail.com" target="_blank">
-              gbemisoyeadejumoke@gmail.com
+              Drop a mail
             </a>
           </div>
         </div>
