@@ -1,4 +1,4 @@
-import CV from "../assets/cv.pdf";
+import CV from "../assets/mycv.pdf";
 import { useState } from "react";
 
 const Home = () => {

@@ -3,16 +3,8 @@ import { BiSun } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
-
-
-
 const Navbar = ({toggle}) => {
   const [nav, setNav] = useState(false);
- 
- 
-
-  
-
   const handleNav = () => {
     setNav(!nav);
   };
