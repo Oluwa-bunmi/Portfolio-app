@@ -1,4 +1,4 @@
-import CV from "../assets/mycv.pdf";
+import CV from "../assets/Oluwabunmi Gbemisoye - Frontend developer.pdf";
 import { useState } from "react";
 
 const Home = () => {
