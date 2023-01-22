@@ -78,7 +78,6 @@ const Projects = () => {
       <div className=" py-8 px-6 sm:px-14 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
         {data.map(({ id, title, image, github, demo, description, stacks }) => {
           return (
-           
             <div
               key={id}
               class="w-[100%]   border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
@@ -91,11 +90,8 @@ const Projects = () => {
               />
 
               <div class="p-5">
-                <a href="#">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight ">
-                    {title}
-                  </h5>
-                </a>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight ">{title}</h5>
+
                 <p class="mb-3 font-normal ">{description}</p>
                 <p>{stacks}</p>
                 <div className="flex gap-5 mt-4">
@@ -107,18 +103,17 @@ const Projects = () => {
                       Github
                     </button>
                   </a>
-                  <a href="{demo}">
+                  <a href={demo}>
                     <button
                       className={activeTab === "live" ? "active" : ""}
                       onClick={() => setActiveTab("live")}
                     >
-                      Go Live 
+                      Go Live
                     </button>
                   </a>
                 </div>
               </div>
             </div>
-            
           );
         })}
       </div>
