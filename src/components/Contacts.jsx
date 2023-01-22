@@ -40,7 +40,7 @@ const Contacts = () => {
             <BsLinkedin className="text-[1.8rem]" />
 
             <a
-              href="https://www.linkedin.com/in/oluwabunmi-gbemisoye-053a7822a/"
+              href="https://www.linkedin.com/in/oluwabunmi-gbemisoye/"
               target="_blank"
             >
               LinkedIn
