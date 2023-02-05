@@ -6,20 +6,19 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 
 const Contacts = () => {
-    const form = useRef();
+  const form = useRef();
 
-     const sendEmail = (e) => {
-       e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-       emailjs
-         .sendForm(
-           "service_ekfcegk",
-           "template_rzynd8w",
-           form.current,
-           "C7SY7Q3Ed8eOQ4Efv"
-         )
-        e.target.reset()
-     };
+    emailjs.sendForm(
+      "service_ekfcegk",
+      "template_rzynd8w",
+      form.current,
+      "C7SY7Q3Ed8eOQ4Efv"
+    );
+    e.target.reset();
+  };
   return (
     <div id="contact">
       <div className="text-center ">
@@ -91,9 +90,7 @@ const Contacts = () => {
             required
             className="inputs"
           ></textarea>
-          <button type="submit" className="active">
-            Send Message
-          </button>
+          <button type="submit">Send Message</button>
         </form>
       </div>
     </div>
