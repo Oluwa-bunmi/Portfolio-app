@@ -58,7 +58,7 @@
     scroll-behavior: smooth;
   }
   li {
-    @apply p-6 ;
+    @apply p-6 cursor-pointer ;
   }
   h1 {
     @apply text-3xl md:text-4xl font-bold;

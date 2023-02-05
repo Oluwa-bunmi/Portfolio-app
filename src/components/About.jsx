@@ -1,11 +1,12 @@
 import { useState } from "react";
-
+import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-scroll";
 const About = () => {
   const [activeTab, setActiveTab] = useState("empty");
   return (
     <div
       id="about"
-      className=" px-4 lg:px-[11rem] py-16 text-center"
+      className="py-4 px-4 lg:px-[11rem] text-center flex flex-col justify-center"
     >
       <h2>Get to know</h2>
       <h1 className="text-[var(--primary)] font-dancing py-6">About Me</h1>
@@ -19,14 +20,22 @@ const About = () => {
           look good amazing.With several projects built, I am confident of my
           skill as a frontend developer.
         </p>
-        <a href="#contact">
+        <Link
+          to="projects"
+          smooth={true}
+          duration={500}
+          className="flex justify-center"
+        >
           <button
-            className={activeTab === "contact" ? "active" : ""}
+            className="group p-3 my-2 flex items-center  rounded-md border-[var(--primary)]  hover:bg-[var(--primary)]"
             onClick={() => setActiveTab("contact")}
           >
-            Let's Talk
+            View Work
+            <span className="group-hover:rotate-90 duration-300">
+              <HiArrowNarrowRight className="ml-2" />
+            </span>
           </button>
-        </a>
+        </Link>
       </div>
     </div>
     // </div>

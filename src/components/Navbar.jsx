@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { BiSun } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import { Link } from "react-scroll";
 const Navbar = ({ toggle }) => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
@@ -16,19 +16,29 @@ const Navbar = ({ toggle }) => {
       </div>
       <ul className="hidden md:flex">
         <li>
-          <a href="/">Home</a>
+          <Link to="home" smooth={true} duration={500}>
+            Home
+          </Link>
         </li>
         <li>
-          <a href="#about">About</a>
+          <Link to="about" smooth={true} duration={500}>
+            About
+          </Link>
         </li>
         <li>
-          <a href="#skills">Skills</a>
+          <Link to="skills" smooth={true} duration={500}>
+            Skills
+          </Link>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <Link to="projects" smooth={true} duration={500}>
+            Projects
+          </Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
         </li>
       </ul>
       <div className="hidden md:flex cursor-pointer">
@@ -53,19 +63,29 @@ const Navbar = ({ toggle }) => {
       >
         <ul>
           <li className="text-[22px]">
-            <a href="/">Home</a>
+            <Link to="home" smooth={true} duration={500} onClick={handleNav}>
+              Home
+            </Link>
           </li>
           <li className="text-[22px]">
-            <a href="#about">About</a>
+            <Link to="about" smooth={true} duration={500} onClick={handleNav}>
+              About
+            </Link>
           </li>
           <li className="text-[22px]">
-            <a href="#skills">Skills</a>
+            <Link to="skills" smooth={true} duration={500} onClick={handleNav}>
+              Skills
+            </Link>
           </li>
           <li className="text-[22px]">
-            <a href="#projects">Projects</a>
+            <Link to="projects" smooth={true} duration={500} onClick={handleNav}>
+              Projects
+            </Link>
           </li>
           <li className="text-[22px]">
-            <a href="#contact">Contact</a>
+            <Link to="contact" smooth={true} duration={500} onClick={handleNav}>
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
