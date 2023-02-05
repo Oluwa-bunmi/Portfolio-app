@@ -86,7 +86,7 @@ const Projects = () => {
                 class=""
                 src={image}
                 alt=""
-                className="h-[253px] w-[100%] rounded-t-lg object-cover"
+                className="h-[253px] w-[100%] rounded-t-lg object-cover "
               />
 
               <div class="p-5">

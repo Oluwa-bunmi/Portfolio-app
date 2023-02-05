@@ -17,31 +17,31 @@ const Skills = () => {
         </h1>
       </div>
       <div className="py-12 px-6 sm:px-14  grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-12">
-        <p className="flex items-end">
+        <p className="flex items-end hover:scale-110 duration-500">
           <AiOutlineHtml5 className="text-5xl text-[coral] " />
           <span>HTML5</span>
         </p>
-        <p className="flex items-end">
+        <p className="flex items-end hover:scale-110 duration-500">
           <DiCss3Full className="text-5xl text-[#00c0dc]" />
           <span>CSS3</span>
         </p>
-        <p className="flex items-end">
+        <p className="flex items-end hover:scale-110 duration-500">
           <DiSass className="text-5xl text-[#cd6799] " />
           <span>SASS</span>
         </p>
-        <p className="flex items-end">
+        <p className="flex items-end hover:scale-110 duration-500 ">
           <IoLogoJavascript className="text-5xl text-[#f0db4f] " />
           <span>JavaScript</span>
         </p>
-        <p className="flex items-end gap-2">
+        <p className="flex items-end gap-2 hover:scale-110 duration-500">
           <BsBootstrapFill className="text-5xl text-[#4c0bce] " />
           <span>Bootstrap</span>
         </p>
-        <p className="flex items-end">
+        <p className="flex items-end hover:scale-110 duration-500">
           <FaReact className="text-5xl text-[#61dbfb] " />
           <span>REACT JS</span>
         </p>
-        <p className="flex items-end">
+        <p className="flex items-end hover:scale-110 duration-500">
           <AiOutlineGithub className="text-5xl  " />
           <span>GIT & GITHUB</span>
         </p>

@@ -52,19 +52,19 @@ const Navbar = ({ toggle }) => {
         }
       >
         <ul>
-          <li>
+          <li className="text-[22px]">
             <a href="/">Home</a>
           </li>
-          <li>
+          <li className="text-[22px]">
             <a href="#about">About</a>
           </li>
-          <li>
+          <li className="text-[22px]">
             <a href="#skills">Skills</a>
           </li>
-          <li>
+          <li className="text-[22px]">
             <a href="#projects">Projects</a>
           </li>
-          <li>
+          <li className="text-[22px]">
             <a href="#contact">Contact</a>
           </li>
         </ul>
