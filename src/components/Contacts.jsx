@@ -20,7 +20,7 @@ const Contacts = () => {
     e.target.reset();
   };
   return (
-    <div id="contact">
+    <div name="contact">
       <div className="text-center ">
         <h2 className="pt-10 ">Get in Touch</h2>
         <h1 className="text-[var(--primary)] font-dancing mt-4">Contact Me</h1>

@@ -8,7 +8,7 @@ import { IoLogoJavascript } from "react-icons/io";
 
 const Skills = () => {
   return (
-    <div id="skills">
+    <div name="skills">
       <hr />
       <div className="text-center  ">
         <h2 className="pt-10 ">What Skills I Have</h2>

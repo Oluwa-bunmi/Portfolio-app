@@ -5,7 +5,7 @@ const About = () => {
   const [activeTab, setActiveTab] = useState("empty");
   return (
     <div
-      id="about"
+      name="about"
       className="py-4 px-4 lg:px-[11rem] text-center flex flex-col justify-center"
     >
       <h2>Get to know</h2>
@@ -26,10 +26,7 @@ const About = () => {
           duration={500}
           className="flex justify-center"
         >
-          <button
-            className="group p-3 my-2 flex items-center  rounded-md border-[var(--primary)]  hover:bg-[var(--primary)]"
-            onClick={() => setActiveTab("contact")}
-          >
+          <button className="group p-3 my-2 flex items-center  rounded-md border-[var(--primary)]  hover:bg-[var(--primary)]">
             View Work
             <span className="group-hover:rotate-90 duration-300">
               <HiArrowNarrowRight className="ml-2" />
