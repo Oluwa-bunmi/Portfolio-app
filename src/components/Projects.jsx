@@ -80,7 +80,7 @@ const Projects = () => {
           return (
             <div
               key={id}
-              class="w-[100%]   border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
+              class="w-[100%] border border-gray-200 rounded-lg shadow-md hover:scale-105 duration-300 "
             >
               <img
                 class=""
