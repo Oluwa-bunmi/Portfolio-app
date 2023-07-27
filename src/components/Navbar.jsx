@@ -3,6 +3,7 @@ import { BiSun } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { Link } from "react-scroll";
+import logo from "../assets/lopage.ico";
 
 const Navbar = ({ toggle }) => {
   const [nav, setNav] = useState(false);
@@ -17,9 +18,10 @@ const Navbar = ({ toggle }) => {
           to="home"
           smooth={true}
           duration={500}
-          className="text-[var(--primary)] font-dancing text-3xl md:text-4xl font-bold cursor-pointer"
+          className="flex items-center font-dancing text-3xl md:text-4xl font-bold cursor-pointer"
         >
-          Jummy
+          <img src={logo} alt="logo" />
+          <p>dev</p>
         </Link>
       </div>
       <ul className="hidden md:flex">
