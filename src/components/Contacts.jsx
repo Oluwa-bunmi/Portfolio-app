@@ -4,6 +4,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
+import { motion, useScroll } from "framer-motion";
 
 const Contacts = () => {
   const form = useRef();
@@ -20,78 +21,87 @@ const Contacts = () => {
     e.target.reset();
   };
   return (
-    <div name="contact">
-      <div className="text-center ">
-        <h2 className="pt-10 ">Get in Touch</h2>
-        <h1 className="text-[var(--primary)] font-dancing mt-4">Contact Me</h1>
-      </div>
-      <div className=" px-6 sm:px-14 py-12 lg:grid lg:grid-cols-[30%_58%] gap-[2rem] lg:gap-[12%]">
-        <div className="flex flex-col order-2 lg:order-1">
-          <div className="flex items-center gap-4 leading-[5]">
-            <AiOutlineGithub className="text-[2.5rem]" />
-
-            <a href="https://github.com/Oluwa-bunmi" target="_blank">
-              Github
-            </a>
-          </div>
-
-          <div className="flex items-center gap-4 leading-[5]">
-            <BsLinkedin className="text-[1.8rem]" />
-
-            <a
-              href="https://www.linkedin.com/in/oluwabunmi-gbemisoye/"
-              target="_blank"
-            >
-              LinkedIn
-            </a>
-          </div>
-          <div className="flex items-center gap-4 leading-[5]">
-            <BsWhatsapp className="text-[1.8rem]" />
-
-            <a
-              href="https://api.whatsapp.com/send?phone=+2347040573717"
-              target="_blank"
-            >
-              Whatsapp
-            </a>
-          </div>
-
-          <div className="flex items-center gap-4 leading-[5]">
-            <MdOutlineEmail className="text-[2rem]" />
-
-            <a href="mailto:gbemisoyeadejumoke@gmail.com" target="_blank">
-              Drop a mail
-            </a>
-          </div>
+    <div
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+    >
+      <div name="contact">
+        <div className="text-center">
+          <h2 className="pt-10 ">Get in Touch</h2>
+          <h1 className="text-[var(--primary)] font-dancing mt-4">
+            Contact Me
+          </h1>
         </div>
-        <form
-          ref={form}
-          onSubmit={sendEmail}
-          className="flex flex-col gap-5 order-1 pt-8 lg:pt-0 lg:order-2"
-        >
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Full Name"
-            required
-            className="inputs"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            className="inputs"
-          />
-          <textarea
-            name="message"
-            rows="7"
-            placeholder="Your Message"
-            required
-            className="inputs"
-          ></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+        <div className="px-6 sm:px-14 py-12 lg:grid lg:grid-cols-[30%_58%] gap-[2rem] lg:gap-[12%]">
+          <div className="flex flex-col order-2 lg:order-1">
+            <div className="flex items-center gap-4 leading-[5]">
+              <AiOutlineGithub className="text-[2.5rem]" />
+
+              <a href="https://github.com/Oluwa-bunmi" target="_blank">
+                Github
+              </a>
+            </div>
+
+            <div className="flex items-center gap-4 leading-[5]">
+              <BsLinkedin className="text-[1.8rem]" />
+
+              <a
+                href="https://www.linkedin.com/in/oluwabunmi-gbemisoye/"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </div>
+            <div className="flex items-center gap-4 leading-[5]">
+              <BsWhatsapp className="text-[1.8rem]" />
+
+              <a
+                href="https://api.whatsapp.com/send?phone=+2347040573717"
+                target="_blank"
+              >
+                Whatsapp
+              </a>
+            </div>
+
+            <div className="flex items-center gap-4 leading-[5]">
+              <MdOutlineEmail className="text-[2rem]" />
+
+              <a href="mailto:gbemisoyeadejumoke@gmail.com" target="_blank">
+                Drop a mail
+              </a>
+            </div>
+          </div>
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="flex flex-col gap-5 order-1 pt-8 lg:pt-0 lg:order-2"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Full Name"
+              required
+              className="inputs"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              className="inputs"
+            />
+            <textarea
+              name="message"
+              rows="7"
+              placeholder="Your Message"
+              required
+              className="inputs"
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
       </div>
     </div>
   );

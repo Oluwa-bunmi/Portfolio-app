@@ -3,9 +3,8 @@ import battery from "../assets/battery.jpeg";
 import dashboard from "../assets/dashboard.jpeg";
 import resort from "../assets/resort.jpeg";
 import weather from "../assets/weather.jpeg";
-import vestium from "../assets/vestium.jpeg";
+import ecommerce from "../assets/ecommerce.jpeg";
 import { useState } from "react";
-
 const data = [
   {
     id: 1,
@@ -19,12 +18,12 @@ const data = [
   },
   {
     id: 2,
-    image: dashboard,
-    title: "Dashboard",
-    description: "A responsive dashboard with light and dark mode",
-    stacks: "Stacks: HTML, SASS",
-    github: "https://github.com/Oluwa-bunmi/Dashboard",
-    demo: "https://mydashboardtheme.netlify.app/",
+    image: ecommerce,
+    title: "JummyLuxe",
+    description: "A fully functional e-commerce website",
+    stacks: "Stacks: REACT",
+    github: "https://github.com/Oluwa-bunmi/JummyLuxe",
+    demo: "https://jummy-luxe.vercel.app/",
   },
   {
     id: 3,
@@ -56,14 +55,23 @@ const data = [
     demo: " https://battery-indicator.netlify.app/",
   },
 
+  // {
+  //   id: 6,
+  //   image: vestium,
+  //   title: "Vestium",
+  //   description: "A simple landing page",
+  //   stacks: "Stacks: HTML, SASS, Bootstrap",
+  //   github: "https://github.com/Oluwa-bunmi/Vestium",
+  //   demo: "https://myvestiumproject.netlify.app/",
+  // },
   {
     id: 6,
-    image: vestium,
-    title: "Vestium",
-    description: "A simple landing page",
-    stacks: "Stacks: HTML, SASS, Bootstrap",
-    github: "https://github.com/Oluwa-bunmi/Vestium",
-    demo: "https://myvestiumproject.netlify.app/",
+    image: dashboard,
+    title: "Dashboard",
+    description: "A responsive dashboard with light and dark mode",
+    stacks: "Stacks: HTML, SASS",
+    github: "https://github.com/Oluwa-bunmi/Dashboard",
+    demo: "https://mydashboardtheme.netlify.app/",
   },
 ];
 
@@ -75,22 +83,21 @@ const Projects = () => {
         <h2 className="pt-10 ">My recent projects.</h2>
         <h1 className="text-[var(--primary)] font-dancing mt-4">Portfolio</h1>
       </div>
-      <div className=" py-8 px-6 sm:px-14 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="py-8 px-6 sm:px-14 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
         {data.map(({ id, title, image, github, demo, description, stacks }) => {
           return (
             <div
               key={id}
-              class="w-[100%] border border-gray-200 rounded-lg shadow-md hover:scale-105 duration-300 "
+              class="w-[100%] border border-gray-200 rounded-lg shadow-md hover:scale-105 duration-300"
             >
               <img
-                class=""
                 src={image}
-                alt=""
-                className="h-[253px] w-[100%] rounded-t-lg object-cover "
+                alt="/"
+                className="h-[253px] w-[100%] rounded-t-lg object-cover"
               />
 
               <div class="p-5">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight ">{title}</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight">{title}</h5>
 
                 <p class="mb-3 font-normal ">{description}</p>
                 <p>{stacks}</p>
