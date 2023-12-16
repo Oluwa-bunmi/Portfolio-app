@@ -5,6 +5,8 @@ import { FaReact } from "react-icons/fa";
 import { BsBootstrapFill } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
 import { IoLogoJavascript } from "react-icons/io";
+import tailwind from "../assets/tailwind.svg";
+
 
 const Skills = () => {
   return (
@@ -44,6 +46,10 @@ const Skills = () => {
         <p className="flex items-end hover:scale-110 duration-500">
           <AiOutlineGithub className="text-5xl  " />
           <span>GIT & GITHUB</span>
+        </p>
+        <p className="flex items-end hover:scale-110 duration-500">
+          <img src={tailwind} alt="tailwindCSS" className="w-[58px] -mb-2"/>
+          <span>TailwindCSS</span>
         </p>
       </div>
       <hr />

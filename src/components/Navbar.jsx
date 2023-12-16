@@ -68,7 +68,7 @@ const Navbar = ({ toggle }) => {
         className={
           nav
             ? "absolute left-0 top-0  w-full h-screen px-4 py-7 bg-[var(--background)] flex flex-col justify-center items-center "
-            : "absolute left-[-100%] "
+            : "absolute left-[-100%]"
         }
       >
         <ul>

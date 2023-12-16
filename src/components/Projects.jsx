@@ -1,51 +1,64 @@
 import recipe from "../assets/recipea.jpeg";
+import savey from "../assets/savey.png";
 import battery from "../assets/battery.jpeg";
 import dashboard from "../assets/dashboard.jpeg";
 import resort from "../assets/resort.jpeg";
-import weather from "../assets/weather.jpeg";
 import ecommerce from "../assets/ecommerce.jpeg";
 import { useState } from "react";
+
 const data = [
   {
     id: 1,
-    image: recipe,
-    title: "Recipe Palace",
+    image: savey,
+    title: "Savey Africa",
     description:
-      "Website for looking up recipes. Search function is also included",
-    stacks: "Stacks: React.js",
-    github: "https://github.com/Oluwa-bunmi",
-    demo: "https://recipe-app-oluwa-bunmi.vercel.app/",
-  },
-  {
-    id: 2,
-    image: ecommerce,
-    title: "JummyLuxe",
-    description: "A fully functional e-commerce website",
-    stacks: "Stacks: REACT",
-    github: "https://github.com/Oluwa-bunmi/JummyLuxe",
-    demo: "https://jummy-luxe.vercel.app/",
+      "A comprehensive solution designed to help families and individuals build financial freedom through loans, budgeting etc",
+    stacks: "Stacks: React.js, tailwind, framer motion",
+    github: "https://github.com/Oluwa-bunmi/Savey",
+    demo: "https://getsavey.com/",
   },
   {
     id: 3,
-    image: weather,
-    title: "Weather App",
-    description: "Website for looking up weather information",
-    stacks: "Stacks: HTML, SASS & JavaScript",
-    github: "https://github.com/Oluwa-bunmi/Weather-App",
-    demo: " https://yourweatherforecast.netlify.app/",
+    image: recipe,
+    title: "Recipe Palace",
+    description:
+      "A dynamic website that offers a seamless experience for discovering and exploring a vast array of recipes with the use of an external API",
+    stacks: "Stacks: React.js",
+    github: "https://github.com/Oluwa-bunmi/Recipe-App",
+    demo: "https://recipe-app-oluwa-bunmi.vercel.app/",
   },
   {
+    id: 3,
+    image: ecommerce,
+    title: "JummyLuxe",
+    description:
+      "A fully functional e-commerce website that leverages the power of Stripe for secure and efficient payment processing.",
+    stacks: "Stacks: React.js, stripe",
+    github: "https://github.com/Oluwa-bunmi/JummyLuxe",
+    demo: "https://jummy-luxe.vercel.app/",
+  },
+
+  {
     id: 4,
+    image: dashboard,
+    title: "Dashboard",
+    description: "A responsive admin dashboard with light and dark mode",
+    stacks: "Stacks: HTML, SASS",
+    github: "https://github.com/Oluwa-bunmi/Dashboard",
+    demo: "https://mydashboardtheme.netlify.app/",
+  },
+  {
+    id: 5,
     image: resort,
     title: "Travel Website",
     description: "A simple landing page",
     stacks: "Stacks: React.js, tailwindcss",
-    github: "https://github.com/Oluwa-bunmi",
+    github: "https://github.com/Oluwa-bunmi/react-travel-website",
     demo: "https://baecation.netlify.app/",
   },
 
   {
-    id: 5,
+    id: 6,
     image: battery,
     title: "Battery Indicator",
     description:
@@ -55,24 +68,6 @@ const data = [
     demo: " https://battery-indicator.netlify.app/",
   },
 
-  // {
-  //   id: 6,
-  //   image: vestium,
-  //   title: "Vestium",
-  //   description: "A simple landing page",
-  //   stacks: "Stacks: HTML, SASS, Bootstrap",
-  //   github: "https://github.com/Oluwa-bunmi/Vestium",
-  //   demo: "https://myvestiumproject.netlify.app/",
-  // },
-  {
-    id: 6,
-    image: dashboard,
-    title: "Dashboard",
-    description: "A responsive dashboard with light and dark mode",
-    stacks: "Stacks: HTML, SASS",
-    github: "https://github.com/Oluwa-bunmi/Dashboard",
-    demo: "https://mydashboardtheme.netlify.app/",
-  },
 ];
 
 const Projects = () => {
@@ -102,7 +97,7 @@ const Projects = () => {
                 <p class="mb-3 font-normal ">{description}</p>
                 <p>{stacks}</p>
                 <div className="flex gap-5 mt-4">
-                  <a href={github}>
+                  <a href={github} target="_blank">
                     <button
                       className={activeTab === "github" ? "active" : ""}
                       onClick={() => setActiveTab("github")}
@@ -110,7 +105,7 @@ const Projects = () => {
                       Github
                     </button>
                   </a>
-                  <a href={demo}>
+                  <a href={demo} target="_blank">
                     <button
                       className={activeTab === "live" ? "active" : ""}
                       onClick={() => setActiveTab("live")}
