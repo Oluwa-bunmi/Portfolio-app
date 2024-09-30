@@ -1,9 +1,9 @@
-import recipe from "../assets/recipea.jpeg";
+import getlinked from "../assets/getlinked.jpeg";
 import savey from "../assets/savey.png";
 import battery from "../assets/battery.jpeg";
 import dashboard from "../assets/dashboard.jpeg";
 import resort from "../assets/resort.jpeg";
-import ecommerce from "../assets/ecommerce.jpeg";
+import archi from "../assets/archi.jpeg";
 import { useState } from "react";
 
 const data = [
@@ -19,55 +19,54 @@ const data = [
   },
   {
     id: 3,
-    image: recipe,
-    title: "Recipe Palace",
+    image: getlinked,
+    title: "GetLinked",
     description:
-      "A dynamic website that offers a seamless experience for discovering and exploring a vast array of recipes with the use of an external API",
-    stacks: "Stacks: React.js",
-    github: "https://github.com/Oluwa-bunmi/Recipe-App",
-    demo: "https://recipe-app-oluwa-bunmi.vercel.app/",
+      "A website that enables both individuals and groups to take part in hackathons, combining real-world APIs for dynamic data and bringing a creative design to life.",
+    stacks: "Stacks: React.js, tailwind, framer motion",
+    github: "https://github.com/Oluwa-bunmi/GetLinked",
+    demo: "https://get-linked-by-bunmi.vercel.app/",
   },
   {
     id: 3,
-    image: ecommerce,
-    title: "JummyLuxe",
+    image: archi,
+    title: "Archi",
     description:
-      "A fully functional e-commerce website that leverages the power of Stripe for secure and efficient payment processing.",
-    stacks: "Stacks: React.js, stripe",
-    github: "https://github.com/Oluwa-bunmi/JummyLuxe",
-    demo: "https://jummy-luxe.vercel.app/",
+      "Hotel landing page that allows visitors to browse available rooms, view detailed descriptions and images, and make secure bookings.",
+    stacks: "Stacks: React.js, Vite",
+    github: "https://github.com/Oluwa-bunmi/Archi",
+    demo: "https://archi-mocha.vercel.app/",
   },
 
-  {
-    id: 4,
-    image: dashboard,
-    title: "Dashboard",
-    description: "A responsive admin dashboard with light and dark mode",
-    stacks: "Stacks: HTML, SASS",
-    github: "https://github.com/Oluwa-bunmi/Dashboard",
-    demo: "https://mydashboardtheme.netlify.app/",
-  },
-  {
-    id: 5,
-    image: resort,
-    title: "Travel Website",
-    description: "A simple landing page",
-    stacks: "Stacks: React.js, tailwindcss",
-    github: "https://github.com/Oluwa-bunmi/react-travel-website",
-    demo: "https://baecation.netlify.app/",
-  },
+  // {
+  //   id: 4,
+  //   image: dashboard,
+  //   title: "Dashboard",
+  //   description: "A responsive admin dashboard with light and dark mode",
+  //   stacks: "Stacks: HTML, SASS",
+  //   github: "https://github.com/Oluwa-bunmi/Dashboard",
+  //   demo: "https://mydashboardtheme.netlify.app/",
+  // },
+  // {
+  //   id: 5,
+  //   image: resort,
+  //   title: "Travel Website",
+  //   description: "A simple landing page",
+  //   stacks: "Stacks: React.js, tailwindcss",
+  //   github: "https://github.com/Oluwa-bunmi/react-travel-website",
+  //   demo: "https://baecation.netlify.app/",
+  // },
 
-  {
-    id: 6,
-    image: battery,
-    title: "Battery Indicator",
-    description:
-      "A real time battery level indicator that tells the percentage of the battery.",
-    stacks: "Stacks: HTML, SASS & JavaScript",
-    github: "https://github.com/Oluwa-bunmi/Battery-Percentage-Indicator",
-    demo: " https://battery-indicator.netlify.app/",
-  },
-
+  // {
+  //   id: 6,
+  //   image: battery,
+  //   title: "Battery Indicator",
+  //   description:
+  //     "A real time battery level indicator that tells the percentage of the battery.",
+  //   stacks: "Stacks: HTML, SASS & JavaScript",
+  //   github: "https://github.com/Oluwa-bunmi/Battery-Percentage-Indicator",
+  //   demo: " https://battery-indicator.netlify.app/",
+  // },
 ];
 
 const Projects = () => {

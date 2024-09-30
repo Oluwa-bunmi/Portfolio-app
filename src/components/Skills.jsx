@@ -6,6 +6,7 @@ import { BsBootstrapFill } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
 import { IoLogoJavascript } from "react-icons/io";
 import tailwind from "../assets/tailwind.svg";
+import {SiTypescript} from "react-icons/si";
 
 
 const Skills = () => {
@@ -48,8 +49,13 @@ const Skills = () => {
           <span>GIT & GITHUB</span>
         </p>
         <p className="flex items-end hover:scale-110 duration-500">
-          <img src={tailwind} alt="tailwindCSS" className="w-[58px] -mb-2"/>
+          <img src={tailwind} alt="tailwindCSS" className="w-[58px] -mb-2" />
           <span>TailwindCSS</span>
+        </p>
+        <p className="flex items-end hover:scale-110 duration-500 gap-2">
+          <SiTypescript className="text-5xl text-[#3178C6]" />
+
+          <span>Typescript</span>
         </p>
       </div>
       <hr />

@@ -14,9 +14,9 @@ const About = () => {
 
         <div className="leading-loose">
           <div>
-            <p>I am Oluwabunmi, a frontend developer</p>
+            <p>I am Oluwabunmi, a frontend developer from Nigeria</p>
             <p className="mb-6">
-              A vibrant developer who is always eager to learn new things and
+              Always eager to learn new things and
               collaborate with people. I love applying responsive design
               principles and watching my web pages shrink into different screen
               sizes and still look good amazing.With several projects built, I
