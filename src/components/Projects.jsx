@@ -1,8 +1,5 @@
 import getlinked from "../assets/getlinked.jpeg";
 import savey from "../assets/savey.png";
-import battery from "../assets/battery.jpeg";
-import dashboard from "../assets/dashboard.jpeg";
-import resort from "../assets/resort.jpeg";
 import archi from "../assets/archi.jpeg";
 import { useState } from "react";
 
