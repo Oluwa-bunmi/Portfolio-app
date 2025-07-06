@@ -7,19 +7,19 @@ import emailjs from "emailjs-com";
 import { motion, useScroll } from "framer-motion";
 
 const Contacts = () => {
-  const form = useRef();
+  // const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
 
-    emailjs.sendForm(
-      "service_ekfcegk",
-      "template_rzynd8w",
-      form.current,
-      "C7SY7Q3Ed8eOQ4Efv"
-    );
-    e.target.reset();
-  };
+  //   emailjs.sendForm(
+  //     "service_ekfcegk",
+  //     "template_rzynd8w",
+  //     form.current,
+  //     "C7SY7Q3Ed8eOQ4Efv"
+  //   );
+  //   e.target.reset();
+  // };
   return (
     <div
       initial={{ opacity: 0, scale: 0.5 }}
@@ -74,8 +74,8 @@ const Contacts = () => {
             </div>
           </div>
           <form
-            ref={form}
-            onSubmit={sendEmail}
+            // ref={form}
+            // onSubmit={sendEmail}
             className="flex flex-col gap-5 order-1 pt-8 lg:pt-0 lg:order-2"
           >
             <input
